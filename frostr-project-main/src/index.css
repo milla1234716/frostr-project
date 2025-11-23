@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Industrial color palette - Deep Navy, Charcoal, Cyan */
+    --background: 0 0% 100%;
+    --foreground: 215 25% 15%;
+    
+    --navy: 215 85% 10%;
+    --navy-light: 215 75% 20%;
+    --charcoal: 220 13% 18%;
+    --charcoal-light: 220 10% 25%;
+    
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 15%;
+
+    --primary: 215 85% 10%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 13% 18%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 220 13% 95%;
+    --muted-foreground: 220 10% 40%;
+
+    --accent: 188 95% 42%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 13% 88%;
+    --input: 220 13% 88%;
+    --ring: 188 95% 42%;
+
+    --radius: 0.375rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
